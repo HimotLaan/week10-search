@@ -31,6 +31,7 @@ app.post('/search', (req, res) => {
         for(let i = 0; i < movieGenreIds.length; i++){
             for(let j = 0; j < movieGenres.length; j++){
                 if(movieGenreIds[i] === movieGenres[j].id){
+                    console.log(movieGenres[j].name);
                     movieGenresArray.push(movieGenres[j].name);
                 }
             }
